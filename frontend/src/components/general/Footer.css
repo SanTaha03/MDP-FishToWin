@@ -1,0 +1,7 @@
+nav div svg {
+  fill: #000000;
+}
+
+nav div:hover svg {
+  fill: #ffffff;
+}
