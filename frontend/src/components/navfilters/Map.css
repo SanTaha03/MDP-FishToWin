@@ -1,0 +1,29 @@
+
+.btn-layout{
+    display: flex;
+    height: 100%;
+    width : 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--sizing-size-x1, 2px) 5px;
+    gap: var(--sizing-size-x4, 8px);
+    border-radius: var(--sizing-size-x3, 6px) 0px 0px var(--sizing-size-x3, 6px);
+    border: 1px solid var(--colors-gray, #D1D5DB);
+    /* shadow-sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  
+}
+.is-active{
+    color:#ffffff;
+    fill: #ffffff;
+    background-color: #5BA8EF;
+}
+.is-not-active{
+    color: #4E5765;
+    fill:#4E5765;
+    background-color: #ffffff;
+}
+
+
+
