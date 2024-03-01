@@ -6,7 +6,7 @@ import { ReactComponent as House } from "../icon/House.svg"
 import './Footer.css'
 export default function Footer() {
   return (
-    <nav className="footer bg-transparent flex flex-row justify-around w-full py-2">
+    <nav className="footer bg-white sticky bottom-0 flex flex-row justify-around w-full pt-2 pb-2">
       <div className="bg-neutral-300 hover:bg-sky-400 rounded-full p-1">
         <House />
       </div>

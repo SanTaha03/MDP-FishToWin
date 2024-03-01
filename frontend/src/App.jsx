@@ -1,28 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import Footer from './components/general/Footer';
+import FiltresHautPageHome from './components/home/FiltresHautPageHome';
+import ListItemHome from './components/home/ListItemHome';
+
+
 import Header from './components/general/Header';
 import MapListContainer from './components/navfilters/MapListContainer';
 
 function App() {
   return (
-    <div className="App">
-      <Header title="Profil" />
-      <MapListContainer />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col items-center">
+      <FiltresHautPageHome />
+      <ListItemHome title="9ème Challenge" cat="Carnassiers en Bateau" place="Nort/Erdre" price="50€" places="20" />
+      <ListItemHome title="9ème Challenge" cat="Carnassiers en Bateau" place="Nort/Erdre" price="50€" places="20" />
+      <ListItemHome title="9ème Challenge" cat="Carnassiers en Bateau" place="Nort/Erdre" price="50€" places="20" />
+      <ListItemHome title="9ème Challenge" cat="Carnassiers en Bateau" place="Nort/Erdre" price="50€" places="20" />
       <Footer />
     </div>
   );
