@@ -7,7 +7,7 @@ import ListItemHome from './components/home/ListItemHome';
 
 function App() {
   return (
-    <div className="App flex flex-col items-center bg-black">
+    <div className="App flex flex-col items-center">
       <FiltresHautPageHome />
       <ListItemHome title="9ème Challenge" cat="Carnassiers en Bateau" place="Nort/Erdre" price="50€" places="20" />
       <ListItemHome title="9ème Challenge" cat="Carnassiers en Bateau" place="Nort/Erdre" price="50€" places="20" />

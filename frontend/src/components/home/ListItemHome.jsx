@@ -1,6 +1,6 @@
 export default function ListItemHome({ title, cat, place, price, places }) {
   return (
-    <div className="rounded bg-white w-9/10 shadow flex flex-col items-start p-2 mt-2 mb-2 mr-1 ml-1">
+    <div className="rounded bg-white w-9/10 shadow-xl flex flex-col items-start p-2 mt-2 mb-2 mr-1 ml-1">
       <h2 className="font-l font-semibold">{title}</h2>
       <hr className="w-full" />
       <p className="text-md font-semibold">Catégorie: {cat}</p>
