@@ -4,6 +4,8 @@ import FiltresHautPageHome from './components/home/FiltresHautPageHome';
 import ListItemHome from './components/home/ListItemHome';
 
 
+import Header from './components/general/Header';
+import MapListContainer from './components/navfilters/MapListContainer';
 
 function App() {
   return (
