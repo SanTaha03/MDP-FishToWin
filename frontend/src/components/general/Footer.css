@@ -2,6 +2,11 @@ nav div svg {
   fill: #000000;
 }
 
+nav div.isActive svg {
+  fill: #000000;
+
+}
+
 nav div:hover svg {
-  fill: #ffffff;
+  fill: #000000;
 }

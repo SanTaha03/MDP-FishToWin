@@ -1,11 +1,11 @@
-
 .btn {
-    height: 48px;
-    min-width: 40px;
-    justify-content: center;
-    align-items: center;
-    background: var(--colors-white, #FCFCFC);
-    /* shadow-sm */
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    display: flex;
-  }
+  height: 48px;
+  width: 80%;
+  min-width: 40px;
+  justify-content: center;
+  align-items: center;
+  background: var(--colors-white, #FCFCFC);
+  /* shadow-sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+}
