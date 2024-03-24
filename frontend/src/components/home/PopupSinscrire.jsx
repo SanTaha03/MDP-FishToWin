@@ -2,7 +2,7 @@ import ButtonDefault from '../btn/ButtonDefault'
 import { ReactComponent as CloseIcon } from '../icon/closeIcon.svg'
 export default function PopupSinscrire({ concours, setInscrire }) {
   return (
-    <div className="w-full absolute bg-white rounded-t-xl flex flex-col items-center shadow h-[520px] bottom-0 p-2 m-0" >
+    <div className="w-full absolute bg-white rounded-t-xl flex flex-col items-center shadow h-[520px] bottom-0 p-2 m-0 z-[1]" >
       <div className="w-full flex flex-row justify-between">
         <div className="flex flex-col">
           <h3 className="text-xl font-bold">{concours.title}</h3>

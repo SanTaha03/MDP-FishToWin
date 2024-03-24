@@ -2,8 +2,9 @@
 import { ReactComponent as Profile } from "../icon/Profile.svg"
 import { ReactComponent as Ranking } from "../icon/Ranking.svg"
 import { ReactComponent as House } from "../icon/House.svg"
-
 import './Footer.css'
+import { useNavigate } from "react-router-dom";
+
 export default function Footer() {
   const url = window.location.href;
   const urlPart = url.split('/');
@@ -32,20 +33,21 @@ export default function Footer() {
       className2 = "bg-white rounded-full hover:bg-sky-400 p-1 w-full";
       className3 = "bg-sky-400 rounded-full hover:bg-sky-400 p-1 w-ful isActive";
   }
+  const navigate = useNavigate();
 
   return (
-    <nav className="footer bg-white sticky bottom-0 flex flex-row justify-around w-full pt-2 pb-2">
-      <div className="flex flex-row justify-center align-center rounded-full bg-gradient-to-b from-cyan-400 to-sky-400 pb-[1px]">
+    <nav className="footer bg-white sticky bottom-0 flex flex-row justify-around w-full pt-2 pb-2 z-0">
+      <div onClick={()=>navigate('/')} className="flex flex-row justify-center align-center rounded-full bg-gradient-to-b from-cyan-400 to-sky-400 p-[1px] cursor-pointer">
         <div className={className1}>
           <House />
         </div>
       </div>
-      <div className="flex flex-row justify-center align-center rounded-full bg-gradient-to-b from-cyan-400 to-sky-400 p-[1px]">
+      <div onClick={()=>navigate('/classement')} className="flex flex-row justify-center align-center rounded-full bg-gradient-to-b from-cyan-400 to-sky-400 p-[1px] cursor-pointer">
         <div className={className2}>
           <Ranking />
         </div>
       </div>
-      <div className="flex flex-row justify-center align-center rounded-full bg-gradient-to-b from-cyan-400 to-sky-400 p-[1px]">
+      <div onClick={()=>navigate('/profil')} className="flex flex-row justify-center align-center rounded-full bg-gradient-to-b from-cyan-400 to-sky-400 p-[1px] cursor-pointer">
         <div className={className3}>
           <Profile />
         </div>
